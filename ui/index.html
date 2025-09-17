@@ -1,0 +1,231 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evelyn Fernandes | Estudante de Desenvolvimento de Sistemas na Escola Senai Jaguariúna-SP</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="min-h-screen">
+
+    <!-- Profile Section -->
+    <section class="py-12 px-6 bg-gradient-to-b from-dark-bg to-gray-900/50">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="flex justify-center mb-8">
+                <div class="relative">
+                    <div class="w-64 h-64 bg-pink-500 rounded-full opacity-20 blur-3xl absolute -top-10 -left-10"></div>
+                    <div class="w-64 h-64 bg-green-400 rounded-full opacity-20 blur-3xl absolute -bottom-10 -right-10"></div>
+                    <div class="glass-card p-2 rounded-full">
+                        <img src="./assets/avatar.png" 
+                             alt="Evelyn Fernandes" 
+                             class="w-48 h-48 object-cover rounded-full border-4 border-pink-400/30">
+                    </div>
+                </div>
+            </div>
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">
+                Evelyn <span class="neon-text-blue">Fernandes</span>
+            </h1>
+            <p class="text-xl text-gray-300 mb-6">
+                Estudante de Desenvolvimento de Sistemas na Escola Senai Jaguariúna-SP 🎓💻
+            </p>
+            <div class="flex justify-center space-x-4">
+                   <!-- Apenas Instagram -->
+                  <a href="https://www.instagram.com/evelyn_fernandes2/?hl=es" target="_blank" rel="noopener noreferrer"
+                  class="w-12 h-12 rounded-full bg-purple-400/20 flex items-center justify-center text-purple-400 hover:bg-purple-400/40 transition">
+                 <i class="fab fa-instagram text-xl"></i>
+                <!-- GitHub atualizado -->
+                <a href="https://github.com/EvelynFerna" target="_blank" rel="noopener noreferrer" 
+                   class="w-10 h-10 rounded-full bg-pink-400/20 flex items-center justify-center text-pink-400 hover:bg-pink-400/40 transition">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navbar -->
+    <nav class="glass-card sticky top-0 w-full z-50 py-4 px-6">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold neon-text-blue">Evelyn <span class="neon-text-pink">Fernandes</span></a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#about" class="hover:text-pink-400 transition">Sobre</a>
+                <a href="#projects" class="hover:text-pink-400 transition">Projetos</a>
+                <a href="#contact" class="hover:text-green-400 transition">Contato</a>
+            </div>
+            <button class="md:hidden text-xl" id="mobile-menu-button">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden glass-card mt-4 py-4 px-6 rounded-lg">
+            <div class="flex flex-col space-y-4">
+                <a href="#about" class="hover:text-pink-400 transition">Sobre</a>
+                <a href="#projects" class="hover:text-pink-400 transition">Projetos</a>
+                <a href="#contact" class="hover:text-green-400 transition">Contato</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 px-6 bg-gradient-to-b from-dark-bg to-gray-900/50">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12 section-title">Sobre Mim</h2>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="glass-card p-8 rounded-xl hover-grow">
+                    <h3 class="text-2xl font-bold mb-4 text-blue-400">Minha Caminhada 🚀</h3>
+                    <p class="mb-4 text-gray-300">
+                        Estudando e descobrindo o mundo da tecnologia desde cedo. 
+                        Interesse em programação, design e como tudo se conecta.
+                    </p>
+                    <p class="mb-4 text-gray-300">
+                        Hoje estudo Desenvolvimento de Sistemas, sempre criando projetos e testando ideias novas que o professor passa e aprendendo ao maximo possivel.
+                    </p>
+                    <p class="text-gray-300">
+                        Meu objetivo é aprender, compartilhar e evoluir, sempre com foco em criatividade e prática. 🎨
+                    </p>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-bold mb-6 text-pink-400">Tecnologias que estudo</h3>
+                    <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-6">
+                        <div class="tech-icon flex flex-col items-center">
+                            <i class="fab fa-html5 text-4xl text-orange-500 mb-2"></i>
+                            <span class="text-sm">HTML5</span>
+                        </div>
+                        <div class="tech-icon flex flex-col items-center">
+                            <i class="fab fa-css3-alt text-4xl text-blue-500 mb-2"></i>
+                            <span class="text-sm">CSS3</span>
+                        </div>
+                        <div class="tech-icon flex flex-col items-center">
+                            <i class="fab fa-js text-4xl text-yellow-400 mb-2"></i>
+                            <span class="text-sm">JavaScript</span>
+                        </div>
+                        <div class="tech-icon flex flex-col items-center">
+                            <i class="fab fa-react text-4xl text-blue-300 mb-2"></i>
+                            <span class="text-sm">React</span>
+                        </div>
+                        <div class="tech-icon flex flex-col items-center">
+                            <i class="fas fa-database text-4xl text-pink-400 mb-2"></i>
+                            <span class="text-sm">Banco de Dados</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 px-6 bg-gradient-to-b from-gray-900/50 to-dark-bg">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold mb-4 section-title">Projetos 🎨</h2>
+            <p class="text-xl text-gray-400 mb-12">Alguns trabalhos e experimentos que criei nos estudos</p>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <a href="https://github.com/rebecalazarini/tcc" target="_blank" class="project-card glass-card rounded-xl overflow-hidden hover-grow">
+                    <img src="./assets/tcc.png" alt="TCC Pet Gato" class="w-full h-40 object-cover">
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold text-white">TCC Pet Gato</h3>
+                        <p class="text-gray-300 text-sm">Em andamento com meu grupo</p>
+                    </div>
+                </a>
+
+                <a href="https://github.com/EvelynFerna/produtos" target="_blank" class="project-card glass-card rounded-xl overflow-hidden hover-grow">
+                    <img src="./assets/LuxeeGlamour.png" alt="Loja de Vestidos" class="w-full h-40 object-cover">
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold text-white">Loja de Vestidos</h3>
+                        <p class="text-gray-300 text-sm">HTML + CSS + JS</p>
+                    </div>
+                </a>
+
+                <a href="https://github.com/EvelynFerna/Lima-prova" target="_blank" class="project-card glass-card rounded-xl overflow-hidden hover-grow">
+                    <img src="/ui/assets/avatarfilme.png" alt="Bot Discord" class="w-full h-40 object-cover">
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold text-white">Informações do filme Avatar 2</h3>
+                        <p class="text-gray-300 text-sm">Em andamento pra melhorar visualmente</p>
+                    </div>
+                </a>
+
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold mb-4 section-title">Entre em Contato 📩</h2>
+            <p class="text-xl text-gray-400 mb-12">Bora trocar ideia ou montar um projeto junto?</p>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="glass-card p-8 rounded-xl hover-grow">
+                    <h3 class="text-2xl font-bold mb-6 text-blue-400">Me manda uma mensagem</h3>
+                    <form>
+                        <div class="mb-6">
+                            <label for="name" class="block mb-2 text-gray-300">Seu nome</label>
+                            <input type="text" id="name" class="w-full px-4 py-3 rounded-lg text-white focus:ring-2 focus:ring-blue-400">
+                        </div>
+                        <div class="mb-6">
+                            <label for="email" class="block mb-2 text-gray-300">Seu e-mail</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 rounded-lg text-white focus:ring-2 focus:ring-blue-400">
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block mb-2 text-gray-300">Sua mensagem</label>
+                            <textarea id="message" rows="5" class="w-full px-4 py-3 rounded-lg text-white focus:ring-2 focus:ring-blue-400"></textarea>
+                        </div>
+                        <button type="submit" class="gradient-bg text-white font-medium py-3 px-8 rounded-full hover-grow w-full md:w-auto">
+                            Enviar 🚀
+                        </button>
+                    </form>
+                </div>
+                
+                <div>
+                    <div class="glass-card p-8 rounded-xl mb-8 hover-grow">
+                        <h3 class="text-2xl font-bold mb-4 text-pink-400">Minhas redes</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <i class="fas fa-envelope text-blue-400 mt-1 mr-4 text-xl"></i>
+                                <span>evelynluiz.fernandes@gmail.com</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-phone-alt text-green-400 mt-1 mr-4 text-xl"></i>
+                                <span>(19) 99999-9999</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-map-marker-alt text-pink-400 mt-1 mr-4 text-xl"></i>
+                                <span> Jaguariúna- SP</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="glass-card p-8 rounded-xl hover-grow">
+                        <h3 class="text-2xl font-bold mb-6 text-green-400">Redes Sociais</h3>
+                        <div class="flex space-x-6">
+                            <!-- GitHub atualizado -->
+                            <a href="https://github.com/EvelynFerna" target="_blank" rel="noopener noreferrer"
+                               class="w-12 h-12 rounded-full bg-pink-400/20 flex items-center justify-center text-pink-400 hover:bg-pink-400/40 transition">
+                                <i class="fab fa-github text-xl"></i>
+                            <a href="https://www.instagram.com/evelyn_fernandes2/?hl=es" target="_blank" rel="noopener noreferrer"
+                               class="w-12 h-12 rounded-full bg-purple-400/20 flex items-center justify-center text-purple-400 hover:bg-purple-400/40 transition">
+                                <i class="fab fa-instagram text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 px-6 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto text-center">
+            <p class="text-gray-400 mt-2">Criado por uma estudante de tecnologia na área de Desenvolvimento de Sistemas</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
